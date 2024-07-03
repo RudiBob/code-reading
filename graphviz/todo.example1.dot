@@ -1,0 +1,7 @@
+digraph {    
+    // ranked in priority
+    TEAM -> Customer1 -> {"list of onboarded clients", "email client"}
+    TEAM -> Customer2 -> {"TICKET-1111 deploy to prod", "bug on endpoint", "dashboard"}
+    TEAM -> Customer3 -> {"Uptime IaC", "BLOCKER Custom Golang -> Terraform"}
+    TEAM -> Customer4 -> {"ReSync AWS with IaC", "Doco Restore Process"}
+}
