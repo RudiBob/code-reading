@@ -3,12 +3,14 @@ Often when you inherit a code base (such as a Bitbucket git repo) you are tasked
 
 # Method
 1. Check out your repo
-2. Copy the pre-written Doxyfile to the root of your repo
-3. Modify PROJECT_NAME at the very least to match your project name
-4. Run it using docker 
+2. Copy the pre-written `Doxyfile` to the root of your repo
+3. Modify `PROJECT_NAME` at the very least to match your project name
+4. run `doxygen` in the same folder as the `Doxyfile`
+    1. can be installed using brew or other package managers
+5. or, Run it using docker 
     1. further reading see https://gitlab.com/pommalabs/docker/doxygen
     2. Run `% docker run -it --rm --name Doxygen -v ${PWD}:/opt/prj pommalabs/doxygen`
     * __Note:__ if using windows, use powershell 7+ such that the ${PWD} will work.
-5. View the results
+6. View the results
     1. On macos run `open doxygen/html/index.html`
     2. On windows run `start doxygen/html/index.html`
